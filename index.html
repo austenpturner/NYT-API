@@ -12,20 +12,30 @@
     <h1>New York Times Article Search</h1>
 
     <form>
-        <label name='search'>Search terms</label>
-        <input type='text' id='search' name='search'>
+        <div class='container inputs'>
+            <label name='search'>Search terms:</label>
+            <input type='text' id='search' name='search'>
+        </div>
 
-        <label name='num-results'>Number of results</label>
-        <input type='number' id='num-results'>
+        <div class='container inputs'>
+            <label name='num-results'>Number of results:</label>
+            <input type='number' id='num-results'>
+        </div>
 
-        <label name='start-date'>Start date</label>
-        <input type='date' id='start-date' name='start-date'>
+        <div class='container inputs'>
+            <label name='start-date'>Start date:</label>
+            <input type='date' id='start-date' name='start-date'>
+        </div>
 
-        <label name='end-date'>End date</label>
-        <input type='date' id='end-date' name='end-date'>
+        <div class='container inputs'>
+            <label name='end-date'>End date:</label>
+            <input type='date' id='end-date' name='end-date'>
+        </div>
 
-        <button type='submit' class='button' id='search'>Search articles</button>
-        <button type='submit' class='button' id='clear'>Clear articles</button>
+        <div class='container' id='buttons'>
+            <button type='submit' class='button' id='search-btn'>Search articles</button>
+            <button type='submit' class='button' id='clear-btn'>Clear articles</button>
+        </div>
     </form>
 
     <div id='articles'>
